@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map,Filter,Reduce</title> 
+    <script>
+       const objectArray=[
+        {"name":"John", "age":25},
+        {"name":"Jane", "age":30},
+        {"name":"Bob", "age":35},
+        {"name":"Dani","age":16},
+        {"name":"Juanpa","age":29}, 
+       ]
+       let nombres = objectArray.map(x=> x.name);
+       let mayores = objectArray.filter((x)=> x.age>=30);
+       let menores = objectArray.filter((x)=> x.age<30);
+      let suma = objectArray.reduce((acum,x)=> acum+ x.age ,0)
+    </script>
+</head>
+<body>
+
+</body>
+</html>
